@@ -3,10 +3,17 @@
     border: none 0;
     font-size: 15px;
     text-decoration: none;
+    word-break: keep-all;
 }
 .clearfix::after{
     content:'';
     display: block;
+}
+.mt5{
+    margin-top: 5px;
+}
+.mt10{
+    margin-top: 10px;
 }
 .loading{
     position: relative;
@@ -18,14 +25,19 @@
 }
 .contents{
     max-width: 1280px;
-    margin: 0 auto;
+    margin: 50px auto 0;
 }
 .contents_box{
     display:inline-block;
     width: 30%;
+    min-height: 503px;
     vertical-align: top;
     margin: 0 calc(10% / 6);
     text-align: left;
+    position: relative;
+    padding: 20px;
+    box-shadow: 10px 10px 18px 0px;
+    box-sizing: border-box;
 }
 .contents_box:nth-child(n + 4){
     margin-top: 25px;
@@ -37,13 +49,13 @@
 }
 .movie_poster{
     display: block;
-    margin:0 auto;
+    margin:10px auto 0;
 }
 .movie_desc{
     display: -webkit-box;
     max-height: 150px;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     overflow: hidden;
     white-space: normal;
     -o-text-overflow: ellipsis;
